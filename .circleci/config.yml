@@ -43,7 +43,7 @@ workflows:
   welcome:
     jobs:
       - print_hello
-      - print-world:
+      - print_world:
           requires:
-            - print-hello 
+            - print_hello 
   
