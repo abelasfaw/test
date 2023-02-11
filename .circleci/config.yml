@@ -42,7 +42,7 @@ jobs:
 workflows:
   welcome:
     jobs:
-      - print-hello
+      - print_hello
       - print-world:
           requires:
             - print-hello 
