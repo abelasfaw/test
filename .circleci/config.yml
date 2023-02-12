@@ -33,7 +33,14 @@ jobs:
       - run:
           name: "Print World"
           command: "echo World from my code"
-    
+  print_name:
+    docker:
+      - image: circleci/node:13.8.0
+    steps:
+      - checkout
+      - run:
+          name: "Print Name"
+          command: "echo My name is: $MY_NAME"
 
 
 
