@@ -40,7 +40,8 @@ jobs:
       - checkout
       - run:
           name: "Print Name"
-          command: echo $MY_NAME
+          command: |
+            echo $MY_NAME
 
 
 
@@ -49,9 +50,5 @@ jobs:
 workflows:
   welcome:
     jobs:
-      - print_hello
-      - print_world:
-          requires:
-            - print_hello 
       - print_name
   
