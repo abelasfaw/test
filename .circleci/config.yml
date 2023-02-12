@@ -40,7 +40,7 @@ jobs:
       - checkout
       - run:
           name: "Print Name"
-          command: "echo My name is: $MY_NAME"
+          command: echo $MY_NAME
 
 
 
