@@ -7,7 +7,7 @@ Resources:
     Properties:
       SecurityGroups:
         - !Ref InstanceSecurityGroup
-      KeyName: demoserver_key #used new key
+      KeyName: demoserver_key #used new ssh key
       ImageId: 'ami-07dc2dd8e0efbc46a' # you may need to find out what instance types are available in your region - use https://cloud-images.ubuntu.com/locator/ec2/
       InstanceType: t3.micro
   InstanceSecurityGroup:
